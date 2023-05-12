@@ -14,7 +14,7 @@ import java.util.List;
 @Document(collection = "pedidos")
 public class Pedido {
     @Id
-    private Long id;
+    private String id;
     private List<Coffe> coffe;
     private Endereco endereco;
 

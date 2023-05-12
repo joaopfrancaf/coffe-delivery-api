@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-public record PedidoResponseDto(Long id, List<Coffe> coffe, Endereco endereco) {
+public record PedidoResponseDto(String id, List<Coffe> coffe, Endereco endereco) {
 
     public PedidoResponseDto(Pedido pedido) {
         this(pedido.getId(),pedido.getCoffe(), pedido.getEndereco());

@@ -4,7 +4,10 @@ import com.example.coffe.delivery.java.Dto.PedidoRequestDto;
 import com.example.coffe.delivery.java.Entity.Pedido;
 import com.example.coffe.delivery.java.Repository.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PedidoService {
     @Autowired
     private PedidoRepository pedidoRepository;
