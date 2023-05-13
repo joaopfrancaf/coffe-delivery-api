@@ -1,7 +1,7 @@
 package com.example.coffe.delivery.java.Controller;
 
-import com.example.coffe.delivery.java.Dto.PedidoRequestDto;
-import com.example.coffe.delivery.java.Dto.PedidoResponseDto;
+import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoRequestDto;
+import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoResponseDto;
 import com.example.coffe.delivery.java.Entity.Pedido;
 import com.example.coffe.delivery.java.Service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,7 @@ public class PedidoController {
     @Autowired
     private PedidoService pedidoService;
 
+    @CrossOrigin(origins = "*")
     @PostMapping
     public PedidoResponseDto createPedido(@RequestBody PedidoRequestDto pedidoDto) {
         Pedido savedPedido = pedidoService.savePedido(pedidoDto);
@@ -23,7 +24,10 @@ public class PedidoController {
         return savedPedidoDto;
     }
 
-    public PedidoResponseDto findAll(@RequestBody PedidoRequestDto pedidoDto) {
-        return null;
+    @CrossOrigin(origins = "*")
+    @GetMapping
+    public List<PedidoResponseDto> findAll() {
+        List<PedidoResponseDto> pedidos = pedidoService.pegaTodos();
+        return pedidos;
     }
 }

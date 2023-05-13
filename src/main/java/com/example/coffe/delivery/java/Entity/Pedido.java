@@ -1,6 +1,6 @@
 package com.example.coffe.delivery.java.Entity;
 
-import com.example.coffe.delivery.java.Dto.PedidoRequestDto;
+import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoRequestDto;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,11 +15,11 @@ import java.util.List;
 public class Pedido {
     @Id
     private String id;
-    private List<Coffe> coffe;
+    private List<Coffe> carrinho;
     private Endereco endereco;
 
     public Pedido(PedidoRequestDto dto) {
-        this.coffe = dto.coffes();
+        this.carrinho = dto.carrinho();
         this.endereco = dto.endereco();
     }
 }
