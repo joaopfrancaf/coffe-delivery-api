@@ -18,9 +18,9 @@ public class CoffeController {
     @CrossOrigin(origins = "*")
     @PostMapping
     public CoffeResponseDto createCoffe(@RequestBody CoffeRequestDto dto) {
-        CoffeResponseDto test = coffeService.saveCoffe(dto);
+        CoffeResponseDto responseDto = coffeService.saveCoffe(dto);
 
-        return test;
+        return responseDto;
     }
 
     @CrossOrigin(origins = "*")
