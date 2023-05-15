@@ -26,4 +26,11 @@ public class CoffeService {
 
         return new CoffeResponseDto(coffe);
     }
+
+    public List<CoffeResponseDto> saveCoffeArray(List<CoffeRequestDto> dto) {
+        List<Coffe> coffes = dto.stream().map(Coffe:: new).toList();
+        List<Coffe> savedCoffes = coffes.stream().map(coffe -> coffeRepository.save(coffe)).toList();
+
+        return savedCoffes.stream().map(CoffeResponseDto::new).toList();
+    }
 }

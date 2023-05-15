@@ -24,6 +24,14 @@ public class CoffeController {
     }
 
     @CrossOrigin(origins = "*")
+    @PostMapping(value = "/arrayCoffes")
+    public List<CoffeResponseDto> createCoffeArray(@RequestBody List<CoffeRequestDto> dto) {
+        List<CoffeResponseDto> responseDto = coffeService.saveCoffeArray(dto);
+
+        return responseDto;
+    }
+
+    @CrossOrigin(origins = "*")
     @GetMapping
     public List<CoffeResponseDto> findAll () {
         List<CoffeResponseDto> coffes = coffeService.PegarTodos();
