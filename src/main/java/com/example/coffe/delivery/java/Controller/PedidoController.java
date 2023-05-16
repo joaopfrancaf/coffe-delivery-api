@@ -5,6 +5,7 @@ import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoResponseDto;
 import com.example.coffe.delivery.java.Entity.Pedido;
 import com.example.coffe.delivery.java.Service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class PedidoController {
     private PedidoService pedidoService;
 
     @CrossOrigin(origins = "*")
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public PedidoResponseDto createPedido(@RequestBody PedidoRequestDto pedidoDto) {
         Pedido savedPedido = pedidoService.savePedido(pedidoDto);

@@ -3,8 +3,8 @@ package com.example.coffe.delivery.java.Controller;
 import com.example.coffe.delivery.java.Dto.CoffeDto.CoffeRequestDto;
 import com.example.coffe.delivery.java.Dto.CoffeDto.CoffeResponseDto;
 import com.example.coffe.delivery.java.Service.CoffeService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +16,7 @@ public class CoffeController {
     private CoffeService coffeService;
 
     @CrossOrigin(origins = "*")
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public CoffeResponseDto createCoffe(@RequestBody CoffeRequestDto dto) {
         CoffeResponseDto responseDto = coffeService.saveCoffe(dto);
