@@ -14,7 +14,7 @@ import java.util.List;
 public class Pedido {
     @Indexed
     private String id;
-    private List<Coffe> carrinho;
+    private List<Product> carrinho;
     private Endereco endereco;
 
     public Pedido(PedidoRequestDto dto) {
