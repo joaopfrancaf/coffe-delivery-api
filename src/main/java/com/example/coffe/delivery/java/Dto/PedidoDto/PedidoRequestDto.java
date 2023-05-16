@@ -5,5 +5,5 @@ import com.example.coffe.delivery.java.Entity.Endereco;
 
 import java.util.List;
 
-public record PedidoRequestDto(List<Coffe> carrinho, List pagamento, Endereco endereco) {
+public record PedidoRequestDto(List<Coffe> carrinho, Endereco endereco) {
 }

@@ -1,19 +1,18 @@
 package com.example.coffe.delivery.java.Entity;
 
 import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoRequestDto;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.data.annotation.Id;
+import lombok.*;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
-@Setter
 @Getter
-@EqualsAndHashCode(of = "id")
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(collection = "pedidos")
 public class Pedido {
-    @Id
+    @Indexed
     private String id;
     private List<Coffe> carrinho;
     private Endereco endereco;
