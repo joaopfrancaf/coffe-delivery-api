@@ -1,6 +1,6 @@
-package com.example.coffe.delivery.java.Entity;
+package com.example.coffe.delivery.java.entity;
 
-import com.example.coffe.delivery.java.Dto.CoffeDto.CoffeRequestDto;
+import com.example.coffe.delivery.java.dto.CoffeDto.CoffeRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

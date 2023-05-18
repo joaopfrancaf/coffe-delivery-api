@@ -1,6 +1,6 @@
-package com.example.coffe.delivery.java.Dto.CoffeDto;
+package com.example.coffe.delivery.java.dto.CoffeDto;
 
-import com.example.coffe.delivery.java.Entity.Coffe;
+import com.example.coffe.delivery.java.entity.Coffe;
 
 import java.util.List;
 

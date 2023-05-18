@@ -1,6 +1,6 @@
-package com.example.coffe.delivery.java.Entity;
+package com.example.coffe.delivery.java.entity;
 
-import com.example.coffe.delivery.java.Dto.PedidoDto.PedidoRequestDto;
+import com.example.coffe.delivery.java.dto.PedidoDto.PedidoRequestDto;
 import lombok.*;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;

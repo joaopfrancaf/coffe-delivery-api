@@ -1,4 +1,4 @@
-package com.example.coffe.delivery.java.Dto.CoffeDto;
+package com.example.coffe.delivery.java.dto.CoffeDto;
 
 import java.util.List;
 

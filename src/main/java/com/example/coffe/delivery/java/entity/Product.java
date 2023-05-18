@@ -1,11 +1,9 @@
-package com.example.coffe.delivery.java.Entity;
+package com.example.coffe.delivery.java.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Getter
 @Setter

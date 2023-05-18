@@ -1,8 +1,8 @@
-package com.example.coffe.delivery.java.Controller;
+package com.example.coffe.delivery.java.controller;
 
-import com.example.coffe.delivery.java.Dto.CoffeDto.CoffeRequestDto;
-import com.example.coffe.delivery.java.Dto.CoffeDto.CoffeResponseDto;
-import com.example.coffe.delivery.java.Service.CoffeService;
+import com.example.coffe.delivery.java.dto.CoffeDto.CoffeRequestDto;
+import com.example.coffe.delivery.java.dto.CoffeDto.CoffeResponseDto;
+import com.example.coffe.delivery.java.service.CoffeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
