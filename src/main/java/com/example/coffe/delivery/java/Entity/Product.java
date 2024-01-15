@@ -1,4 +1,4 @@
-package com.example.coffe.delivery.java.entity;
+package com.example.coffe.delivery.java.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

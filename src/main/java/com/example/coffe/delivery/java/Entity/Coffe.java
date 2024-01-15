@@ -1,4 +1,4 @@
-package com.example.coffe.delivery.java.entity;
+package com.example.coffe.delivery.java.Entity;
 
 import com.example.coffe.delivery.java.dto.CoffeDto.CoffeRequestDto;
 import lombok.AllArgsConstructor;

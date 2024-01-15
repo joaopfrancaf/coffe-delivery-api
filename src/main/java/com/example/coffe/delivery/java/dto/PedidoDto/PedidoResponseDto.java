@@ -1,8 +1,8 @@
 package com.example.coffe.delivery.java.dto.PedidoDto;
 
-import com.example.coffe.delivery.java.entity.Endereco;
-import com.example.coffe.delivery.java.entity.Pedido;
-import com.example.coffe.delivery.java.entity.Product;
+import com.example.coffe.delivery.java.Entity.Endereco;
+import com.example.coffe.delivery.java.Entity.Pedido;
+import com.example.coffe.delivery.java.Entity.Product;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package com.example.coffe.delivery.java.service;
 
 import com.example.coffe.delivery.java.dto.CoffeDto.CoffeRequestDto;
 import com.example.coffe.delivery.java.dto.CoffeDto.CoffeResponseDto;
-import com.example.coffe.delivery.java.entity.Coffe;
+import com.example.coffe.delivery.java.Entity.Coffe;
 import com.example.coffe.delivery.java.repository.CoffeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
